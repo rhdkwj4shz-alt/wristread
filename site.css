@@ -1,0 +1,122 @@
+/* Wristread's site: the support page and the privacy policy. Plain files, system fonts, no
+   cookies or scripts beyond the little word demo. Colours follow the app icon: dark ink, cream,
+   and one coral accent for the focus letter. */
+
+:root {
+  --bg: #f6f1e7;
+  --surface: #fffaf1;
+  --text: #1a1d2e;
+  --muted: #5d5f6e;
+  --line: #e2d9c8;
+  --accent: #d9503b;
+  --focus: #e8573f;
+  --guide: #c9bfae;
+  color-scheme: light dark;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #141729;
+    --surface: #1c2036;
+    --text: #f3ebdd;
+    --muted: #a7a6b3;
+    --line: #2c3150;
+    --accent: #f56b54;
+    --focus: #f56b54;
+    --guide: #3a4062;
+  }
+}
+
+* { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font: 17px/1.55 -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, .word, .masthead .line {
+  font-family: ui-serif, "New York", Georgia, "Times New Roman", serif;
+}
+
+a { color: var(--accent); text-underline-offset: 0.15em; }
+
+main, header, footer { max-width: 680px; margin: 0 auto; padding: 0 20px; }
+
+/* The support page's opening. */
+.masthead { text-align: center; padding-top: 64px; padding-bottom: 8px; }
+.masthead img { width: 112px; height: 112px; border-radius: 25px; display: block; margin: 0 auto 20px; }
+.masthead h1 { font-size: 44px; line-height: 1.1; margin: 0 0 8px; letter-spacing: -0.01em; }
+.masthead .line { font-size: 21px; color: var(--muted); margin: 0 0 24px; }
+.badge {
+  display: inline-block; padding: 8px 16px; border-radius: 999px;
+  border: 1px solid var(--line); color: var(--muted); font-size: 15px;
+}
+
+/* The reader in miniature: one word on the guide line, its focus letter held still. */
+.reader {
+  position: relative; margin: 36px auto 8px; max-width: 420px; height: 128px;
+  background: #0b0d18; border-radius: 30px; overflow: hidden;
+}
+.reader::before, .reader::after {
+  content: ""; position: absolute; left: 38%; width: 2px; height: 14px; background: #3a4062;
+}
+.reader::before { top: 26px; }
+.reader::after { bottom: 26px; }
+.reader .word {
+  position: absolute; top: 50%; left: 0; right: 0; transform: translateY(-50%);
+  font-size: 38px; color: #f3ebdd; white-space: pre; text-align: left;
+}
+.reader .word .pivot { color: #f56b54; }
+
+h2 { font-size: 28px; margin: 56px 0 12px; letter-spacing: -0.005em; }
+h3 { font-size: 17px; margin: 28px 0 6px; }
+p, li { color: var(--text); }
+.small { color: var(--muted); font-size: 15px; }
+
+ul { padding-left: 1.2em; }
+li { margin: 0 0 10px; }
+
+.panel {
+  background: var(--surface); border: 1px solid var(--line);
+  border-radius: 18px; padding: 4px 20px;
+}
+
+details { border-bottom: 1px solid var(--line); padding: 2px 0; }
+details:first-of-type { border-top: 1px solid var(--line); }
+summary {
+  cursor: pointer; list-style: none; padding: 14px 28px 14px 0; position: relative;
+  font-weight: 600;
+}
+summary::-webkit-details-marker { display: none; }
+summary::after {
+  content: "+"; position: absolute; right: 4px; top: 12px; color: var(--muted);
+  font-weight: 400; font-size: 20px;
+}
+details[open] summary::after { content: "−"; }
+details > p, details > ul { margin-top: 0; }
+
+footer { padding-top: 48px; padding-bottom: 56px; color: var(--muted); font-size: 14px; }
+footer nav { display: flex; flex-wrap: wrap; gap: 8px 20px; margin-bottom: 12px; }
+footer nav a { color: var(--muted); }
+footer p { color: var(--muted); }
+
+header .crumb {
+  display: inline-flex; align-items: center; gap: 10px; padding: 28px 0 0;
+  color: var(--text); text-decoration: none; font-weight: 600;
+}
+header .crumb img { width: 28px; height: 28px; border-radius: 7px; }
+
+@media (max-width: 480px) {
+  body { font-size: 16px; }
+  .masthead { padding-top: 44px; }
+  .masthead h1 { font-size: 36px; }
+  .masthead .line { font-size: 19px; }
+  .reader { height: 112px; border-radius: 26px; }
+  .reader .word { font-size: 32px; }
+  h2 { font-size: 25px; }
+}

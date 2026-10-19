@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Wristread</title>
+  <meta name="description" content="Read on your Apple Watch, one word at a time. Books, articles and the news, brought in by your iPhone. Help, questions and contact.">
+  <meta name="theme-color" content="#141729">
+  <meta property="og:title" content="Wristread">
+  <meta property="og:description" content="Reading, one word at a time, on your Apple Watch.">
+  <meta property="og:image" content="icon.png">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="stylesheet" href="site.css">
+</head>
+<body>
+  <header class="masthead">
+    <img src="icon.png" alt="The Wristread icon: a cream italic W leaving a coral motion trail on dark ink.">
+    <h1>Wristread</h1>
+    <p class="line">Reading, one word at a time, on your Apple Watch.</p>
+    <!-- At launch, replace this with Apple's "Download on the App Store" badge linking to the listing. -->
+    <span class="badge">Coming soon to iPhone and Apple Watch</span>
+    <div class="reader" aria-hidden="true"><div class="word" id="word"></div></div>
+  </header>
+
+  <main>
+    <h2>What it is</h2>
+    <p>Wristread shows you words one at a time, in one steady place on your watch, so your eyes stay still and the words come to you. A few spare minutes in a queue become a few pages.</p>
+    <p>Your iPhone brings things in: free classics, your own EPUB and PDF books, articles you share from Safari, and the news from sites you follow. They arrive on your watch on their own. Reading books is free, with no limit. Wristread Plus is one optional purchase, with no subscription and no ads.</p>
+
+    <h2 id="help">Help</h2>
+
+    <details>
+      <summary>What do I need?</summary>
+      <p>An iPhone with iOS 27 or later, paired with an Apple Watch with watchOS 27 or later. You read on the watch; the iPhone app is where books, articles and news come in.</p>
+    </details>
+
+    <details>
+      <summary>How do I read?</summary>
+      <p>Open a book on your watch and tap the screen to start or pause, or double-tap your fingers on watches with Double Tap. While it's playing, turn the Digital Crown to go faster or slower. While it's paused, the crown steps back and forth a word at a time. Lowering your wrist pauses.</p>
+      <p>Lost the thread? Press and hold the screen to glance back at the sentence so far. If you glance back three times in a minute, Wristread eases the speed off a little (you can turn that off in Settings).</p>
+      <p>Paused on a word you don't know? Turn the crown back to it and hold the screen. With Wristread Plus, you'll see what it means in that sentence (this needs Apple Intelligence).</p>
+      <p>The first time you open Wristread on your watch, a short introduction finds a pace that feels comfortable for you. You can also take the reading test in the iPhone app and start from your result.</p>
+    </details>
+
+    <details>
+      <summary>Can Wristread read to me?</summary>
+      <p>Yes, with Read Along. Connect AirPods or other Bluetooth headphones to your watch, open a book, and tap the headphones at the top right of the reader. Each word is spoken as it appears, each chapter is announced by name, and it keeps reading when you lower your wrist. Turn the Digital Crown to set the listening speed, which is kept separately from your reading speed.</p>
+      <p>Pause and resume from your AirPods or the watch's Now Playing controls. Now Playing's skip buttons go back or forward a sentence. On AirPods, previous track says the last sentence again, and next track moves on to the next chapter or story. For a sleep timer, pause, tap the list button at the bottom right of the reader, and choose the end of the chapter, or 5 to 45 minutes.</p>
+      <p>When an article or story ends, Keep listening carries on to the next unread one (you can turn it off in Settings). With Plus, In short first tells you in a sentence what the next one is about, so you can skip it with your AirPods. It's written by Apple Intelligence on your iPhone. Turn on Show the sentence to follow each word lit up in its sentence. Choose and preview a voice in Settings, including your Personal Voice if you've made one.</p>
+      <p>You can also ask Siri on your watch to "read to me in Wristread" or "listen to the news in Wristread".</p>
+      <p>Read Along is part of Wristread Plus. You can try it free on the built-in guide, How to Wristread.</p>
+    </details>
+
+    <details>
+      <summary>Is there an easier way to read the words?</summary>
+      <p>Turn on Easy Reading in Settings on your watch. It uses rounded, widely spaced letters, one word at a time, and it may help some readers. Blink beats add a short rest between paragraphs. Both are free.</p>
+    </details>
+
+    <details>
+      <summary>What are quick checks?</summary>
+      <p>When you read on from one chapter into the next, Wristread asks two short questions about the end of the chapter you've just finished. It then shows your effective speed: your speed times how much you took in. It's a more honest number than speed alone.</p>
+      <p>Today's understanding is in Settings, then Reading stats, on your watch. With Plus, so is your effective speed over the week. Quick checks are free and need Apple Intelligence. They're on unless you turn them off in Settings.</p>
+    </details>
+
+    <details>
+      <summary>How do I keep a sentence I liked?</summary>
+      <p>Highlight it. While paused, tap the highlighter at the bottom of the reader. While reading or listening, say "Save that in Wristread" to Siri on your watch and the sentence you're on is kept. Your highlights wait on your iPhone, in Library → Highlights and on each book's page, ready to share.</p>
+      <p>With Wristread Plus and Readwise connected, they also go to your Readwise account.</p>
+    </details>
+
+    <details>
+      <summary>I've only got a few minutes. What should I read?</summary>
+      <p>Ask Siri on your watch to "read for five minutes in Wristread" (anything from two to thirty). Wristread opens the unread article, story or chapter that best fits the time at your speed. Once it has learned when you usually read, the Smart Stack offers something before then too.</p>
+    </details>
+
+    <details>
+      <summary>How do I get books onto my watch?</summary>
+      <p>In the iPhone app, tap <strong>+</strong>:</p>
+      <ul>
+        <li><strong>Free Classics</strong>: public-domain books from Project Gutenberg, one tap each.</li>
+        <li><strong>Import a File</strong>: EPUB, PDF, plain text, Markdown, web pages and RTF.</li>
+      </ul>
+      <p>You can also open a file in Wristread from Files, Mail or any app's share sheet. Everything you add is sent to your watch by itself.</p>
+    </details>
+
+    <details>
+      <summary>A book hasn't arrived on my watch.</summary>
+      <p>Books travel from your iPhone to your watch over Bluetooth and Wi-Fi, and arrive the next time Wristread opens on your watch. Keep your iPhone nearby and open Wristread on both. A long book can take a few minutes.</p>
+      <p>If the iPhone app asks you to install Wristread on your watch, open the Watch app on your iPhone, find Wristread, and tap Install. If a transfer fails, Wristread tries again the next time you open it on either device.</p>
+    </details>
+
+    <details>
+      <summary>I've got a new watch. Do my books start again?</summary>
+      <p>No. Your iPhone keeps your place in every book, as your watch last reported it. When your books arrive on a new or reset watch, each one carries on where you left off. Your places are kept with your library on your iPhone, so they're in its backups too.</p>
+    </details>
+
+    <details>
+      <summary>Can I read books I bought from Kindle or Apple Books?</summary>
+      <p>No. Books protected with DRM can't be opened by any other app. DRM-free EPUBs work, including those from Project Gutenberg, Standard Ebooks and the many publishers and stores that sell books without DRM.</p>
+    </details>
+
+    <details>
+      <summary>Can I bring books from my own library, or Readwise Reader?</summary>
+      <p>With Wristread Plus, yes. In the iPhone app, tap <strong>+</strong>, then Libraries &amp; Readwise.</p>
+      <ul>
+        <li><strong>Your libraries</strong>: any OPDS catalog, such as Calibre's content server (usually <code>http://your-mac.local:8080/opds</code>), Kavita or Komga. Add a sign-in if your library needs one. Wristread asks to use your local network the first time, to reach a library on your Mac or home server.</li>
+        <li><strong>Readwise</strong>: connect with your Readwise access token. The newest articles in your Shortlist and Later lists arrive on your watch, and when you finish one on your wrist it's archived in Reader. Your highlights go to Readwise, and your Daily Review arrives each morning to read or hear.</li>
+      </ul>
+    </details>
+
+    <details>
+      <summary>How do I save an article?</summary>
+      <p>In Safari, tap Share, then Wristread. The page is saved as you see it, so articles you're signed in to come through too. In the app, you can also tap <strong>+</strong>, then Save an Article, and paste a link.</p>
+      <p>Your first five articles are free. Wristread Plus saves as many as you like.</p>
+    </details>
+
+    <details>
+      <summary>How does the news work?</summary>
+      <p>Tap <strong>+</strong>, then News Sources. Choose a suggestion, or type a site's address (like theguardian.com) or paste a feed link. Many paid newsletters give subscribers a private feed link, and that works too.</p>
+      <p>Each time Wristread refreshes, it brings the newest few stories from each source, from the last day and a half. Stories leave your library after three days. You can follow one source free, and any number with Plus. In News Sources, each site shows its latest headline and how many of its stories you have, so you can see it's working.</p>
+      <p>With Plus, Today in Brief turns the day's stories into one calm two-minute read, written by Apple Intelligence on your iPhone. It needs at least three stories from the last day to work from.</p>
+    </details>
+
+    <details>
+      <summary>What does Wristread Plus include?</summary>
+      <p>One purchase, yours for good. There's no subscription, it's shared with your family through Family Sharing, and every Plus feature added later is included. It adds:</p>
+      <ul>
+        <li><strong>Listen</strong>: Read Along, with each word spoken through your AirPods as it appears.</li>
+        <li><strong>Read more of what you like</strong>: unlimited saved articles, as many news sources as you like, and your own libraries and Readwise Reader (see below).</li>
+        <li><strong>Apple Intelligence</strong>: Today in Brief, the day's news as one calm two-minute read; In short, a sentence on each story before it's read to you; recaps and questions about your book, without spoilers; and word meanings, by holding a paused word.*</li>
+        <li><strong>Make it yours</strong>: the live complication, which fills as you read through the chapter and shows the minutes left in it; speed training; your reading history by week and month; and reading styles (rounded, serif or mono type, six focus colours, and two or three words at a time).</li>
+      </ul>
+      <p class="small">* Needs a device and region where Apple Intelligence is available and turned on.</p>
+      <p>Always free: the reader with every comfort feature, unlimited books, five articles and one news source, Read Along in the built-in guide, the introduction, reading test and quick checks, today's reading stats, and Siri, Shortcuts and Spotlight.</p>
+      <p>You can get Plus on your iPhone (Get Plus, at the top left of the library) or on your watch (Settings, the gear at the top left of the library, then Wristread Plus). It's the same purchase on both.</p>
+    </details>
+
+    <details>
+      <summary>How do I restore Plus on a new iPhone?</summary>
+      <p>Open Wristread on your iPhone, tap Get Plus at the top left of the library, then Restore. On the watch, it's in Settings, then Wristread Plus, then Restore. With Family Sharing, members of your family get Plus without buying it again.</p>
+      <p>Changed your mind? Purchases go through Apple, so you can ask Apple for a refund at <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>.</p>
+    </details>
+
+    <details>
+      <summary>Which features use Apple Intelligence?</summary>
+      <p>Today in Brief and In short are written on your iPhone by its on-device model. They go nowhere except your own watch.</p>
+      <p>On the watch, recaps, quick checks, word meanings, and Siri's answers to "What's happened so far in Wristread?" and questions about your book come from Apple's Private Cloud Compute. They use only text from before your place in the book, or, for a word's meaning, the sentence on screen. See the <a href="privacy.html">privacy policy</a> for exactly what is sent.</p>
+      <p>All of these need a device with Apple Intelligence turned on. Without it, they don't appear, or they say that they need it.</p>
+      <p>Summaries can contain mistakes. Each story in the news is there in full if you want the original.</p>
+    </details>
+
+    <details>
+      <summary>How fast should I read?</summary>
+      <p>Studies of reading one word at a time find that understanding holds up well at ordinary speeds, around 250 to 350 words a minute, and falls away above that. So Wristread starts you just above your own natural pace rather than at a headline number, and its speed training only adds a few words a minute at a time.</p>
+      <p>"How Wristread reads", at the end of the library on your iPhone, sets out the research with its sources. On the watch, it's in Settings, under How it works.</p>
+    </details>
+
+    <details>
+      <summary>Can I put Wristread on my watch face?</summary>
+      <p>Yes. Edit a watch face and add the Now Reading complication; it's also in the Smart Stack. With Plus it shows your book and the minutes left in the chapter, and fills as you read through it. There's also a Continue Reading control for Control Center and the Action button on Apple Watch Ultra.</p>
+      <p>You can ask Siri on your watch to "continue reading in Wristread" or "read faster in Wristread". With Plus, you can also ask "What's happened so far in Wristread?" for a recap, or "Ask Wristread about my book".</p>
+    </details>
+
+    <details>
+      <summary>How do I remove something?</summary>
+      <p>On your iPhone, open the book, article or story and tap Remove. It's removed from your watch too.</p>
+    </details>
+
+    <h2 id="contact">Contact</h2>
+    <div class="panel">
+      <p>Something wrong, or an idea? Write to <a href="mailto:seanhenley@gmail.com?subject=Wristread">seanhenley@gmail.com</a>. If it's a problem, please say which iPhone and Apple Watch you have, their software versions, and what you were doing when it happened.</p>
+    </div>
+  </main>
+
+  <footer>
+    <nav>
+      <a href="privacy.html">Privacy policy</a>
+      <a href="#help">Help</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <p>© 2026 Sean Henley.</p>
+    <p>Project Gutenberg is a registered trademark of the Project Gutenberg Literary Archive Foundation. Wristread is not affiliated with it.</p>
+    <p>Apple, Apple Intelligence, Apple Watch, Digital Crown, iPhone, Safari, Siri and watchOS are trademarks of Apple Inc. This site uses no cookies, analytics or trackers.</p>
+  </footer>
+
+  <script>
+    // The reader in miniature: each word placed so its focus letter sits on the guide line.
+    (function () {
+      var el = document.getElementById("word");
+      var text = "Read one word at a time. Your eyes stay still, and the words come to you.";
+      var words = text.split(" ");
+      var still = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+      function pivot(word) {
+        var n = word.replace(/[^\p{L}\p{N}]/gu, "").length;
+        return n <= 1 ? 0 : n <= 5 ? 1 : n <= 9 ? 2 : n <= 13 ? 3 : 4;
+      }
+
+      function show(word) {
+        var lead = (word.match(/^[^\p{L}\p{N}]*/u) || [""])[0].length;
+        var i = lead + pivot(word);
+        el.innerHTML = "";
+        var before = document.createElement("span");
+        var focus = document.createElement("span");
+        var after = document.createElement("span");
+        before.textContent = word.slice(0, i);
+        focus.textContent = word.charAt(i);
+        focus.className = "pivot";
+        after.textContent = word.slice(i + 1);
+        el.append(before, focus, after);
+        var line = el.parentNode.clientWidth * 0.38;
+        el.style.paddingLeft = Math.max(0, line - before.offsetWidth - focus.offsetWidth / 2) + "px";
+      }
+
+      if (still) { show("Wristread"); return; }
+      var at = 0;
+      (function next() {
+        var word = words[at];
+        show(word);
+        at = (at + 1) % words.length;
+        var pause = /[.!?]$/.test(word) ? 2.4 : /[,;:]$/.test(word) ? 1.6 : 1;
+        setTimeout(next, (at === 0 ? 1400 : 0) + 260 * pause);
+      })();
+    })();
+  </script>
+</body>
+</html>
