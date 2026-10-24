@@ -56,6 +56,8 @@ main, header, footer { max-width: 680px; margin: 0 auto; padding: 0 20px; }
   display: inline-block; padding: 8px 16px; border-radius: 999px;
   border: 1px solid var(--line); color: var(--muted); font-size: 15px;
 }
+.badge-link { color: var(--accent); border-color: var(--accent); text-decoration: none; font-weight: 600; }
+.badge-link:hover { background: var(--accent); color: var(--bg); }
 
 /* The reader in miniature: one word on the guide line, its focus letter held still. */
 .reader {
