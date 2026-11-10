@@ -114,6 +114,7 @@ details > p, details > ul { margin-top: 0; }
 .facts dd { margin: 0; }
 .shots { display: grid; grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); gap: 12px; margin: 12px 0 8px; }
 .shots-watch { grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); }
+.shots-home { grid-template-columns: repeat(3, 1fr); }
 .shots img { width: 100%; height: auto; display: block; border-radius: 14px; border: 1px solid var(--line); }
 .shots a:focus-visible img { outline: 2px solid var(--accent); outline-offset: 3px; }
 .icon-row { display: flex; align-items: center; gap: 16px; padding: 16px 20px; }
